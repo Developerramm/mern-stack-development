@@ -26,3 +26,12 @@ app.post("/api/cars",(req,res)=>{
     console.log(brand)
     res.send("Car submitted successfully");
 })
+
+
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://127.0.0.1:27017/myDatabase").then(()=>{
+    console.log("Connection Successful")
+}).catch((error)=>{
+    console.log("Connection failed");
+})
