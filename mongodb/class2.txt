@@ -1,0 +1,19 @@
+db.students.renameCollection("student")
+
+db.students.insertOne({
+	name : "ram Kumar",
+	age : 30,
+	class : "BCA"
+})
+
+
+// to show all data
+db.students.find()
+
+// insert many data
+
+db.students.insertMany([
+	{name : "Sarita Kumari", age : 30, class : "MCA"},
+	{name : "Salman Khan", age : 45, class : "Kala Hiran"},
+	{name  : "John Abraham", age : 34, class : "B.com"}
+])
