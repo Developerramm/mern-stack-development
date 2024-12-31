@@ -1,0 +1,23 @@
+show dbs
+
+use school
+
+db.createCollection("students")
+
+db.createCollection("library")
+
+show collections
+
+
+db.students.renameCollection("student")
+
+db.students.renameCollection("student")
+
+db.help()
+
+db.student.help();
+
+db.library.drop()
+
+
+db.dropDatabase()
