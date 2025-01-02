@@ -1,0 +1,24 @@
+// data type in mongodb
+string,
+
+double,
+
+32-bit integer,
+
+64-bit integer,
+
+boolean,
+
+Array,
+
+object,
+
+Null,
+
+Regular Express,
+
+timestamp,
+
+Date,
+
+ObjectId
