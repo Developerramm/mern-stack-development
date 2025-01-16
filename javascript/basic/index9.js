@@ -4,7 +4,7 @@ function sum(number1, number2) {
   return number1 + number2;
 }
 
-let result = sum(10, 20);
+var result = sum(10, 20);
 console.log(result);
 
 result = sum(20, 30);
@@ -19,6 +19,8 @@ function greet(parameter) {
 }
 
 greet("Ram kumar");
+
+greet("Pooja Kumar Singh");
 
 // greet("Piku")
 
@@ -39,11 +41,33 @@ function arithmetic() {
 
 arithmetic();
 
-
-
 // function expresssion
 
-let expresssion = function(a,b){
-    return a + b;
-}
+let expresssion = function sum(a, b) {
+  return a + b;
+};
 
+console.log("Ram KUmar");
+
+result = expresssion(10, 20);
+console.log(result);
+
+console.log(expresssion("Ram ", "Kumar"));
+
+// anonymous function
+
+var result = function (a, b) {
+  console.log("I am anonymous function");
+  return a + b;
+  console.log("I am after return keyword");
+};
+
+console.log(result(19, 20));
+
+// IIFE function
+(function (a, b) {
+  console.log(a + b);
+  console.log("IIFE here");
+})(10, 20);
+
+console.log("ram kumar");
