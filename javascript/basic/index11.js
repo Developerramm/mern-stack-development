@@ -51,4 +51,66 @@ person.map((item, index) => {
   console.log(item, index);
 });
 
+let num = [1, 2, 3, 4, 5];
+num.forEach((item) => {
+  console.log(item * 2);
+});
+
+let newArray = num.map((item) => {
+  return item * 2;
+});
+
+console.log(num);
+console.log(newArray);
+
+num.push("Ram");
+console.log(num);
+num.push("Mohan", "Hari", "Ram");
+console.log(num);
+
+let item = num.pop();
+console.log(item);
+
+console.log(num);
+
+console.log(num.unshift("ram"));
+console.log(num.shift());
+
+console.log(num.splice(3, 3, "Apple", "Banana"));
+console.log(num);
+
+console.log(num.indexOf("Apple"));
+
+console.log(num.lastIndexOf("Banana"));
+
+console.log(num.includes("Apple"));
+console.log(num.includes(2));
+
+let numberArray = [1,2,3,4,5,6,8,9,10];
+console.log(numberArray);
+
+// let num1 = numberArray.find((item)=>{
+//   return (item % 2 == 0);
+// })
+
+// console.log(num1)
+
+let result = numberArray.findIndex((item)=>{
+  // console.log(item)
+  return item > 10;
+})
+
+console.log(result)
+
+result = numberArray.filter((item)=>{
+  return item > 10;
+})
+console.log(result)
+
+var givenElement = 8;
+result = numberArray.filter((item)=>{
+  return item !== givenElement;
+})
+console.log(result)
+
 
