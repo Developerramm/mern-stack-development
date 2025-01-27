@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js event</title>
+    <style>
+      * {
+        background-color: lightblue;
+        color: white;
+      }
+      .rectangle {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        background-color: black;
+        margin-left: 150px;
+      }
+      #myButton {
+        margin-left: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="rectangle"></div>
+      <button id="myButton">click me</button>
+    </section>
+
+    <script>
+      let myButton = document.getElementById("myButton");
+      let rectDiv = document.querySelector(".rectangle");
+
+      const handleMouseEvent = () => {
+        rectDiv.style.backgroundColor = "#f5ee62";
+        rectDiv.style.borderColor = "#f5ee62";
+      };
+      myButton.addEventListener("click", handleMouseEvent);
+    </script>
+  </body>
+</html>
