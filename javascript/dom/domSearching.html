@@ -1,23 +1,12 @@
-<!-- * ======================
-*   Searching:
-* ======================== -->
-
-<!--? By ID, Class, and Tag: 
-getElementById(id) 
-getElementsByClassName(className)
-getElementsByTagName(tagName) 
-querySelector(selector)
-querySelectorAll(selector) -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <style>
       body,
       button,
@@ -46,43 +35,30 @@ querySelectorAll(selector) -->
       <div class="value"></div>
     </div>
     <script>
-      let findElementById = document.getElementById("heading");
-      // let findElementById = document.getElementById("#heading"); ❌
-      const findElementByClassName =
-        document.getElementsByClassName("list-of--nodes");
+      let findele = document.getElementById("heading");
+      console.log(findele);
+      findele.setAttribute("class", "ram");
+      console.log(findele);
+      console.log((findele.innerText = "ram kumar"));
+      console.log(findele.innerHTML);
+      console.log(findele.innerText);
+      console.log(findele.textContent);
 
-      // console.log(...findElementByClassName);
+      let getByCls = document.getElementsByClassName("list-of--nodes");
+      console.log(getByCls[0]);
+      console.log(getByCls[0].innerHTML);
+      console.log(getByCls[0].innerText);
+      console.log(getByCls[0].textContent);
 
-      // for (let elem of findElementByClassName) {
-      //   console.log(elem.innerHTML);
-      //   console.log(elem.innerText);
-      //   console.log(elem.textContent);
-      // }
-
-      // console.log(findElementById.innerHTML);
-      // console.log(findElementById.innerText);
-      // console.log(findElementById.textContent);
+      for (let elem of getByCls) {
+        console.log(elem);
+      }
 
       // The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.
 
       // Example using `innerText`: Prints text as it appears on screen, considering styling and excluding hidden text.
 
       // Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.
-
-      // const getElementsByTagName = document.getElementsByTagName("li");
-      // // console.log(getElementsByTagName);
-      // // console.log(...getElementsByTagName);
-      // for (let name of getElementsByTagName) {
-      //   console.log(name);
-      // }
-      // const findElementByQuerySelector = document.querySelector("#heading");
-      // console.log(
-      //   (findElementByQuerySelector.innerText = "World Best JS Course")
-      // );
-
-      const findElementByQuerySelectorAll = document.querySelectorAll("li");
-      console.log(findElementByQuerySelectorAll);
-      findElementByQuerySelectorAll.forEach((curElem) => console.log(curElem));
     </script>
   </body>
 </html>
