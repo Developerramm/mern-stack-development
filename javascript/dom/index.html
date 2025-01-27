@@ -1,52 +1,44 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Javascript</title>
-  </head>
-  <body>
-    <h1>Best JS Course</h1>
-    <p>DOM Tree Structure</p>
-  </body>
-</html>
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Best JS Course</title>
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript dom manipulation tutorial</title>
   </head>
   <body>
-    <h1>Best JS Course</h1>
-    <p>Understanding The DOM Tree Structure</p>
-    <hr />
-    <p>It's easy. Helps JS to communicate with HTML</p>
-
-    <!-- * Let's see DOM Navigation -->
+    <h3>Ram Kumar</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+      nam, unde modi expedita dicta ducimus, magni veniam quam architecto
+      officiis minus blanditiis mollitia consequuntur fugiat iste aut est harum
+      ab.
+    </p>
     <script>
       let parent = document;
-      let htmlBody = document.body;
-      let htmlHead = document.head;
+      console.log(parent);
+      console.log(document.head);
+      console.log(document.body);
 
-      // let bodyChild = htmlBody.childNodes;
-      let bodyChild = htmlBody.children;
+      let childBody = document.body;
+      let childHead = document.head;
+      console.log(childBody);
+      console.log(childHead);
+      console.log(childBody.childNodes);
+      console.log(childHead.childNodes);
+      console.log(childHead.childElementCount);
 
-      let firstChild = htmlBody.firstElementChild;
-      // let firstChild = htmlBody.firstChild;
+      console.log(childBody.firstChild);
+      console.log(childBody.firstElementChild);
 
-      // let lastChild = htmlBody.lastChild;
+      console.log(childBody.firstElementChild);
 
-      let nextSibling = firstChild.nextElementSibling;
+      console.log(childBody.lastChild);
+      console.log(childBody.lastElementChild);
 
-      let previousSibling = nextSibling.previousElementSibling;
+      console.log(childBody.previousElementSibling);
+      console.log(childBody.nextElementSibling);
 
-      let parentNode = previousSibling.parentElement;
-
-      console.log(parentNode);
+      
     </script>
   </body>
 </html>
