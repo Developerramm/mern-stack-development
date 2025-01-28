@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="myInput" placeholder="Type something" />
+      <div class="output">
+        <p class="keyPressed">key press</p>
+        <p class="keyCode">Key code</p>
+        <p class="charCode">char code</p>
+        <p class="eventType">Event Type</p>
+      </div>
+    </div>
+
+    <script>
+
+        const handleKeyPress = (event) =>{
+            console.log(event.key)
+            console.log(event.code)
+            console.log(event.type)
+        };
+        var myInput = document.getElementById("myInput");
+        myInput.addEventListener("keydown",handleKeyPress)
+    </script>
+  </body>
+</html>
