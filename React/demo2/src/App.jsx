@@ -1,10 +1,14 @@
+import React from 'react'
 
-function App() {
- 
+const App = () => {
   return (
-    <>
-      <h3>React js tutorial</h3>
-    </>
+    <div>
+      <h1>Hello React js </h1>
+      <h2>Name  : Queen Of Tears </h2>
+      <h3>Rating : 8.2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam aliquid quas facilis soluta vitae, similique saepe facere pariatur hic et, optio reiciendis voluptatibus debitis itaque dolorum, nostrum corrupti animi?</p>
+      <img src="image/queen.jpeg" alt="queen" />
+    </div>
   )
 }
 
