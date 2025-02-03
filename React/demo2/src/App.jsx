@@ -1,15 +1,12 @@
 import React from "react";
-import Card from "./components/Card";
-import { DemoCard } from "./components/DemoCard";
+import NetFlixCard from "./components/NetFlixCard";
 
 const App = () => {
   return (
-    <div className="container">
-      <DemoCard />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <div className="container text-center">
+      <div className="row">
+          <NetFlixCard />
+      </div>
     </div>
   );
 };
