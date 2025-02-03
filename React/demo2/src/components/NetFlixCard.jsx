@@ -3,7 +3,7 @@ import seriesData from "../api/seriesData.json";
 import CardContent from "./CardContent";
 const NetFlixCard = () => {
   return (
-    <div className="col-md-4">
+    <div className="row" style={{margin : "3rem"}}>
       {seriesData.map((item, index) => {
         return (
           <CardContent
