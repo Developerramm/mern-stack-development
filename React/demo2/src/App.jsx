@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="container text-center">
       <div className="row">
-          <NetFlixCard />
+        <NetFlixCard />
       </div>
     </div>
   );
