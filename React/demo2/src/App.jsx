@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
+import Card from "./components/Card";
+import { DemoCard } from "./components/DemoCard";
 
 const App = () => {
-  let students = [ ];
-  let arr = [false,null,undefined,NaN];
   return (
-    <div>
-      <h3> {students.length === 0 && "No students found "} </h3>
-      <h3> Number of Students are { students.length} </h3>
-      <h3> size of array is {arr.length} </h3>
-
+    <div className="container">
+      <DemoCard />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
