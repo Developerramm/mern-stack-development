@@ -1,18 +1,25 @@
 import React from "react";
-import Card from "./components/Card";
+
 
 const App = () => {
+  let person = {
+    name : "Ram Kumar",
+    program : "JavaScript",
+    isProgrammer : true,
+  }
+
+  const village = ()=>{
+    return "Maniyari ";
+  }
+
+
   return (
     <div className="container">
-      <div className="row rol-col-3">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <h4>Dynamic Value in JSX </h4>
+      <h1>Name : {person.name} </h1>
+      <h3>Language : {person.program} </h3>
+      <h3>Is programmer : {person.isProgrammer ? "Yes" : "No"} </h3>
+      <p>Your village is :  {village()} </p>
     </div>
   );
 };
