@@ -9,6 +9,7 @@ const EventPropogation = () => {
   };
   const handleChildClick = (event) => {
     console.log(event);
+    event.stopPropogation;
     console.log("child clicked");
   };
   return (
