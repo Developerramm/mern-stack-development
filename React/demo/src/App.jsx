@@ -1,12 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import ShortCircuit from "./components/ShortCircuit";
 const App = () => {
+  
   return (
-    <div>
-      <h1>Ram kumar </h1>
-      <h2>Maniyari</h2>
+    <div className="container">
+      <h1>app here </h1>
+      <ShortCircuit />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
