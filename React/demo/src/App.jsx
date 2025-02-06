@@ -1,11 +1,10 @@
 import React from "react";
-
-import DataFetchInReact from "./hooks/DataFetchInReact";
+import FetchData from "./components/FetchData";
 
 const App = () => {
   return (
     <div className="container">
-      <DataFetchInReact />
+      <FetchData />
     </div>
   );
 };
