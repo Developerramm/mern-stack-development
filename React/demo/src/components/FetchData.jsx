@@ -18,8 +18,20 @@ const FetchData = () => {
       });
   };
 
+  const fetchPokemon = async () => {
+    try {
+      const res = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
+      const data = await res.json();
+      setData(data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    fetchApiData();
+    fetchPokemon();
   }, []);
 
   if (loading) {
