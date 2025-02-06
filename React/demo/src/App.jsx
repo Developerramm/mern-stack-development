@@ -1,10 +1,10 @@
 import React from "react";
-import FormDemo from "./components/FormDemo";
+import UseEffectDemo from "./hooks/UseEffectDemo";
 
 const App = () => {
   return (
     <div className="container">
-      <FormDemo />
+     <UseEffectDemo />
     </div>
   );
 };
