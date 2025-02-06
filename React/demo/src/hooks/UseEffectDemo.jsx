@@ -3,9 +3,9 @@ import React, { useEffect } from 'react'
 const UseEffectDemo = () => {
     // use effect hook 
     useEffect(()=>{
-        console.log("Hello use effect");
+        
     },[]);
-    console.log("Hello");
+    
 
   return (
     <div className='row'>

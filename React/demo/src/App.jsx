@@ -1,10 +1,11 @@
 import React from "react";
-import UseEffectDemo from "./hooks/UseEffectDemo";
+
+import DataFetchInReact from "./hooks/DataFetchInReact";
 
 const App = () => {
   return (
     <div className="container">
-     <UseEffectDemo />
+      <DataFetchInReact />
     </div>
   );
 };
