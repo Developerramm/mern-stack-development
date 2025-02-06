@@ -1,10 +1,10 @@
 import React from "react";
-import ControlForm from "./hooks/ControlForm";
+import FormDemo from "./components/FormDemo";
 
 const App = () => {
   return (
     <div className="container">
-      <ControlForm />
+      <FormDemo />
     </div>
   );
 };
