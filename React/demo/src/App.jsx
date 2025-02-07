@@ -1,10 +1,10 @@
 import React from "react";
-import FetchData from "./components/FetchData";
+import RefHookDemo from "./RefHook/RefHookDemo";
 
 const App = () => {
   return (
     <div className="container">
-      <FetchData />
+      <RefHookDemo />
     </div>
   );
 };
