@@ -1,12 +1,11 @@
 import React from "react";
-import RefHookDemo from "./RefHook/RefHookDemo";
-import ForwardRefDemo from "./RefHook/ForwardRefDemo";
-import UseId from "./RefHook/UseId";
+import ParentComp from "./components/ParentComp";
 
 const App = () => {
   return (
     <div className="container">
-      <UseId />
+      <h1>React App </h1>
+      <ParentComp />
     </div>
   );
 };
