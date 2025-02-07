@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { BioContext } from ".";
+import { BioContext, useBioContext } from ".";
 
 const Child = () => {
-  const { data, name, age } = useContext(BioContext);
+  const { data, name, age } = useBioContext();
   console.log(data);
   console.log(name, age);
   return (

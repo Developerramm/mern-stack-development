@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import Parent from "./Parent";
-import { BioContext } from ".";
+import { BioContext, useBioContext } from ".";
 
 const ContextApiDemo = () => {
-  const { name } = useContext(BioContext);
+  const { name } = useBioContext();
   return (
     <div>
       <h3>context Api </h3>

@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
 // step 1
 export const BioContext = createContext();
@@ -17,4 +17,9 @@ export const BioProvier = ({ children }) => {
       {children}
     </BioContext.Provider>
   );
+};
+
+export const useBioContext = () => {
+  const context = useContext(BioContext);
+  return context;
 };
