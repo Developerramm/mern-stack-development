@@ -1,10 +1,11 @@
 import React from "react";
 import RefHookDemo from "./RefHook/RefHookDemo";
+import ForwardRefDemo from "./RefHook/ForwardRefDemo";
 
 const App = () => {
   return (
     <div className="container">
-      <RefHookDemo />
+      <ForwardRefDemo />
     </div>
   );
 };
