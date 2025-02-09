@@ -1,12 +1,11 @@
 import React from "react";
-
-import { ReducerComp } from "./useReducer";
+import ReactMemo from "./memo/ReactMemo";
 
 const App = () => {
   return (
     <div className="container">
       <h1>React App </h1>
-      <ReducerComp />
+      <ReactMemo />
     </div>
   );
 };
