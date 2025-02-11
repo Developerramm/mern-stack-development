@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event in js</title>
+  </head>
+  <body>
+    <button onclick="alert('welcome to js')">Inlice event</button>
+    <button id="btn">Click here1</button>
+    <button id="btn1">click event handler button</button>
+
+    <script>
+      document.getElementById("btn").onclick = () => {
+        console.log("Button is clicked ");
+      };
+
+      document.getElementById("btn1").addEventListener("click", () => {
+        console.log("event handler");
+      });
+    </script>
+  </body>
+</html>
