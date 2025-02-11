@@ -17,13 +17,14 @@
     </div>
     <script>
       var myInput = document.getElementById("myInput");
-      const handleKeyPress = (event) => {
-        console.log(event.key);
-        console.log(event.code);
+
+      myInput.addEventListener("input", (event) => {
+        console.log(event.target.value);
+        console.log(event.target.name);
+
         console.log(event.type);
-        console.log(event.charCode);
-      };
-      myInput.addEventListener("keydown", handleKeyPress);
+        // console.log(event.charCode)
+      });
     </script>
   </body>
 </html>
