@@ -5,5 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>keyboard event</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <input type="text" id="myInput" />
+      <div class="output">
+        <p class="keyPress">Key press</p>
+        <p class="keyCode">key code</p>
+        <p class="charCode">char code</p>
+        <p class="eventType">event type</p>
+      </div>
+    </div>
+    <script>
+      var myInput = document.getElementById("myInput");
+      const handleKeyPress = (event) => {
+        console.log(event.key);
+        console.log(event.code);
+        console.log(event.type);
+        console.log(event.charCode);
+      };
+      myInput.addEventListener("keydown", handleKeyPress);
+    </script>
+  </body>
 </html>
